@@ -1,0 +1,6 @@
+{
+  "dependencies": { "debouncing": "~22.7.25" },
+  "devDependencies": {
+    "spago": "next"
+  }
+}
