@@ -4,23 +4,13 @@ workspace:
       path: ./
       dependencies:
         - effect: ">=4.0.0 <5.0.0"
-        - ffi-simple: ">=0.5.1 <0.6.0"
         - prelude: ">=6.0.1 <7.0.0"
       test_dependencies:
         - console
       build_plan:
         - console
-        - control
         - effect
-        - ffi-simple
-        - functions
-        - invariant
-        - maybe
-        - newtype
-        - nullable
         - prelude
-        - safe-coerce
-        - unsafe-coerce
   package_set:
     address:
       registry: 50.13.1
@@ -521,79 +511,14 @@ packages:
     dependencies:
       - effect
       - prelude
-  control:
-    type: registry
-    version: 6.0.0
-    integrity: sha256-sH7Pg9E96JCPF9PIA6oQ8+BjTyO/BH1ZuE/bOcyj4Jk=
-    dependencies:
-      - newtype
-      - prelude
   effect:
     type: registry
     version: 4.0.0
     integrity: sha256-eBtZu+HZcMa5HilvI6kaDyVX3ji8p0W9MGKy2K4T6+M=
     dependencies:
       - prelude
-  ffi-simple:
-    type: registry
-    version: 0.5.1
-    integrity: sha256-S8SYzvSVZKwZQwgAD90YBWq1FMXqgSmQaLsMKq6MM+A=
-    dependencies:
-      - functions
-      - maybe
-      - nullable
-      - prelude
-      - unsafe-coerce
-  functions:
-    type: registry
-    version: 6.0.0
-    integrity: sha256-adMyJNEnhGde2unHHAP79gPtlNjNqzgLB8arEOn9hLI=
-    dependencies:
-      - prelude
-  invariant:
-    type: registry
-    version: 6.0.0
-    integrity: sha256-RGWWyYrz0Hs1KjPDA+87Kia67ZFBhfJ5lMGOMCEFoLo=
-    dependencies:
-      - control
-      - prelude
-  maybe:
-    type: registry
-    version: 6.0.0
-    integrity: sha256-5cCIb0wPwbat2PRkQhUeZO0jcAmf8jCt2qE0wbC3v2Q=
-    dependencies:
-      - control
-      - invariant
-      - newtype
-      - prelude
-  newtype:
-    type: registry
-    version: 5.0.0
-    integrity: sha256-gdrQu8oGe9eZE6L3wOI8ql/igOg+zEGB5ITh2g+uttw=
-    dependencies:
-      - prelude
-      - safe-coerce
-  nullable:
-    type: registry
-    version: 6.0.0
-    integrity: sha256-yiGBVl3AD+Guy4kNWWeN+zl1gCiJK+oeIFtZtPCw4+o=
-    dependencies:
-      - effect
-      - functions
-      - maybe
   prelude:
     type: registry
     version: 6.0.1
     integrity: sha256-o8p6SLYmVPqzXZhQFd2hGAWEwBoXl1swxLG/scpJ0V0=
-    dependencies: []
-  safe-coerce:
-    type: registry
-    version: 2.0.0
-    integrity: sha256-a1ibQkiUcbODbLE/WAq7Ttbbh9ex+x33VCQ7GngKudU=
-    dependencies:
-      - unsafe-coerce
-  unsafe-coerce:
-    type: registry
-    version: 6.0.0
-    integrity: sha256-IqIYW4Vkevn8sI+6aUwRGvd87tVL36BBeOr0cGAE7t0=
     dependencies: []
